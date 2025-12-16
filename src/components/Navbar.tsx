@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
             >
                 <div className="skew-x-[10deg] flex items-center gap-3">
                     <span>Order Now</span>
-                    <ShoppingBag className="w-5 h-5 group-hover:animate-bounce" />
+                    {/* <ShoppingBag className="w-5 h-5 group-hover:animate-bounce" /> */}
                 </div>
             </a>
 
@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             >
                 <div className="skew-x-[10deg] flex items-center gap-3">
                     <span>Order Now</span>
-                    <ShoppingBag className="w-5 h-5 group-hover:animate-bounce" />
+                    {/* <ShoppingBag className="w-5 h-5 group-hover:animate-bounce" /> */}
                 </div>
             </a>
 
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             <div className="pt-8 w-full max-w-xs">
                  <a href="#" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-2 bg-lazeez-green text-white px-8 py-4 w-full text-center hover:bg-white hover:text-lazeez-dark transition-colors font-bold uppercase tracking-widest text-2xl skew-x-[-10deg] shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">
                     <div className="skew-x-[10deg] flex items-center gap-2">
-                         <ShoppingBag className="w-6 h-6" />
+                         {/* <ShoppingBag className="w-6 h-6" /> */}
                         Order Online
                     </div>
                 </a>

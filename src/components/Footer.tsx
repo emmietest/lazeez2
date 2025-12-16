@@ -3,25 +3,31 @@ import logo from '../../assets/logo.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="relative bg-lazeez-dark text-white pt-24 pb-12 px-6">
+    <footer id="contact" className="relative bg-lazeez-dark text-white pt-20 pb-12 px-6">
       
-      {/* Top Divider Chevron */}
-      <div className="absolute top-0 left-0 w-full -mt-1 z-10">
-         <div className="w-full flex justify-center">
-            <div className="w-0 h-0 
-                border-l-[50vw] border-l-transparent
-                border-r-[50vw] border-r-transparent
-                border-t-[30px] border-t-lazeez-cream">
-            </div>
-         </div>
-         <div className="absolute top-0 left-0 w-full flex justify-center pointer-events-none -mt-[4px]">
-             <div className="w-0 h-0 
-                border-l-[50vw] border-l-transparent
-                border-r-[50vw] border-r-transparent
-                border-t-[4px] border-t-lazeez-green">
-             </div>
-         </div>
-      </div>
+      {/* Top SVG Divider */}
+<div className="absolute top-0 left-0 w-full z-20 pointer-events-none">
+  <svg
+    viewBox="0 0 100 24"
+    preserveAspectRatio="none"
+    className="w-full h-12"
+  >
+    {/* Cream fill */}
+    <polygon
+      points="0,0 100,0 50,22"
+      fill="#F5F1EC" // lazeez-cream
+    />
+
+    {/* Green edge */}
+    <polyline
+      points="0,0 50,22 100,0"
+      fill="none"
+      stroke="#7CB342" // lazeez-green
+      strokeWidth="3"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
 
       <div className="max-w-md mx-auto flex flex-col items-center text-center space-y-10">
         

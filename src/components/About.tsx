@@ -5,10 +5,10 @@ const About: React.FC = () => {
     <section id="about" className="bg-lazeez-cream pt-20 pb-12 px-4 relative">
       <div className="max-w-md mx-auto text-center flex flex-col items-center gap-8">
         
-        {/* Logo Text */}
+        {/* Logo Text
         <h2 className="font-display text-4xl md:text-5xl uppercase tracking-tighter text-lazeez-dark">
           Eats Lazeez
-        </h2>
+        </h2> */}
 
         <p className="font-sans text-gray-700 text-lg md:text-xl leading-relaxed max-w-sm">
           Come taste the dedication to quality and flavor that makes us the true Home of the Falafel.

@@ -113,8 +113,8 @@ const Hero: React.FC = () => {
       
       {/* Chevron Divider */}
       <div className="absolute bottom-0 left-0 w-full translate-y-1/2 z-20">
-         <svg viewBox="0 0 100 10" preserveAspectRatio="none" className="w-full h-8 md:h-12 text-lazeez-cream fill-current drop-shadow-sm">
-             <polygon points="0,0 50,10 100,0" className="fill-transparent stroke-lazeez-green stroke-[0.5]" />
+         <svg viewBox="0 0 100 20" preserveAspectRatio="none" className="w-full h-16 md:h-20 text-lazeez-cream fill-current drop-shadow-sm">
+             <polyline points="0,0 50,12 100,0" className="fill-transparent stroke-lazeez-green stroke-[2]" />
          </svg>
          {/* Using a pseudo-element style approach with SVG for the sharp V shape divider */}
          <div className="w-full h-6 flex justify-center items-end">
@@ -124,15 +124,17 @@ const Hero: React.FC = () => {
                 border-t-[30px] border-t-lazeez-cream">
             </div>
          </div>
+        </div>
+
          {/* Green accent line following the V */}
-         <div className="absolute top-6 left-0 w-full flex justify-center pointer-events-none">
+         {/* <div className="absolute top-6 left-0 w-full flex justify-center pointer-events-none">
              <div className="w-0 h-0 
                 border-l-[50vw] border-l-transparent
                 border-r-[50vw] border-r-transparent
                 border-t-[4px] border-t-lazeez-green">
              </div>
          </div>
-      </div>
+      </div> */}
     </section>
   );
 };

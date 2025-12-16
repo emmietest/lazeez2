@@ -204,7 +204,7 @@ const Menu: React.FC = () => {
         ))}
 
         <div className="mt-16 text-center bg-lazeez-cream p-8 rounded-2xl border-2 border-lazeez-dark/5">
-            <h4 className="font-display text-2xl mb-2 text-lazeez-dark">Catering Available</h4>
+            <h4 className="font-display text-3xl md:text-4xl font-bold uppercase tracking-wide mb-4text-lazeez-dark">Catering Available</h4>
             <p className="font-sans text-gray-600">Please speak to management about prices and options for your next event.</p>
         </div>
 
