@@ -7,13 +7,22 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-lazeez-dark text-white px-6 sticky top-0 z-50 shadow-md">
-      <div className="max-w-7xl mx-auto flex justify-between items-center gap-4">
+    <nav className="bg-lazeez-dark text-white px-4 md:px-6 sticky top-0 z-50 shadow-md overflow-x-hidden">
+      <div className="max-w-7xl mx-auto flex justify-between items-center gap-3 min-w-0">
         
         {/* Left Section: Logo (image) */}
-        <a href="#" className="relative group flex items-center shrink-0">
-            <img src={logo} alt="Lazeez Eats" className="h-16 w-36 md:w-48 object-contain" />
-        </a>
+        {/* Mobile Logo */}
+        <img
+            src={logo}
+            className="h-12 max-w-[100px] md:hidden object-contain"
+        />
+
+        {/* Desktop Logo */}
+        <img
+            src={logo}
+            className="hidden md:block h-16 max-w-[192px] object-contain"
+        />
+        
 
         {/* Center Section: Desktop Menu */}
         <div className="hidden md:flex flex-1 justify-center space-x-8 lg:space-x-12 font-display tracking-wide text-lg lg:text-xl items-center">
@@ -40,9 +49,9 @@ const Navbar: React.FC = () => {
             {/* Mobile Order Icon Button (Compact) */}
             <a 
                 href="#" 
-                className="flex md:hidden items-center gap-2 bg-lazeez-green text-white font-display uppercase tracking-widest text-lg px-6 lg:px-8 py-3 hover:bg-white hover:text-lazeez-dark transition-all duration-300 transform skew-x-[-10deg] shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-1 group"
+                className="flex md:hidden items-center bg-lazeez-green text-white font-display uppercase tracking-wider text-sm px-3 py-2 skew-x-0 md:skew-x-[-10deg] transition-all duration-300 shadow-[3px_3px_0px_0px_rgba(255,255,255,0.2)] group"
             >
-                <div className="skew-x-[10deg] flex items-center gap-3">
+                <div className="md:skew-x-[10deg] flex items-center gap-2">
                     <span>Order Now</span>
                     {/* <ShoppingBag className="w-5 h-5 group-hover:animate-bounce" /> */}
                 </div>

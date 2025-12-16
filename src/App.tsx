@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-lazeez-cream text-lazeez-dark">
+    <div className="min-h-screen bg-lazeez-cream text-lazeez-dark overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />

@@ -170,10 +170,10 @@ const Menu: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">
-          <h2 className="font-display text-5xl md:text-7xl text-lazeez-dark uppercase mb-4">
+          <h2 className="font-display text-5xl md:text-7xl text-lazeez-dark uppercase mb-4 break-words">
             Our <span className="text-lazeez-green">Menu</span>
           </h2>
-          <p className="font-sans text-gray-500 max-w-2xl mx-auto text-lg">
+          <p className="font-sans text-gray-500 max-w-2xl mx-auto text-lg whitespace-normal break-words">
             Authentic recipes passed down through generations. Prepared fresh daily.
           </p>
         </div>
@@ -204,7 +204,7 @@ const Menu: React.FC = () => {
         ))}
 
         <div className="mt-16 text-center bg-lazeez-cream p-8 rounded-2xl border-2 border-lazeez-dark/5">
-            <h4 className="font-display text-3xl md:text-4xl font-bold uppercase tracking-wide mb-4text-lazeez-dark">Catering Available</h4>
+            <h4 className="font-display text-3xl md:text-4xl font-bold uppercase tracking-wide mb-4 text-lazeez-dark">Catering Available</h4>
             <p className="font-sans text-gray-600">Please speak to management about prices and options for your next event.</p>
         </div>
 

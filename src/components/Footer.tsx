@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
     {/* Cream fill */}
     <polygon
       points="0,0 100,0 50,22"
-      fill="#F5F1EC" // lazeez-cream
+      fill="#ffffffff" // lazeez-cream
     />
 
     {/* Green edge */}
