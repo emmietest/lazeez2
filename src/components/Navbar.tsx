@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-lazeez-dark text-white px-4 md:px-6 sticky top-0 z-50 shadow-md overflow-x-hidden">
+    <nav className="bg-lazeez-dark text-white px-4 md:px-6 sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center gap-3 min-w-0">
         
         {/* Left Section: Logo (image) */}
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-lazeez-dark border-t border-gray-800 p-6 flex flex-col items-center space-y-6 font-display text-xl tracking-wider shadow-2xl h-[calc(100vh-80px)] overflow-y-auto">
+        <div className="md:hidden fixed top-[80px] left-0 w-full bg-lazeez-dark border-t border-gray-800 p-6 flex flex-col items-center space-y-6 font-display text-xl tracking-wider shadow-2xl z-40 max-h-[calc(100vh-80px)] overflow-y-auto">
             <a href="#" onClick={() => setIsOpen(false)} className="hover:text-lazeez-green">Home</a>
             <a href="#menu" onClick={() => setIsOpen(false)} className="hover:text-lazeez-green">Menu</a>
             <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-lazeez-green">About</a>
