@@ -15,8 +15,8 @@ const CAROUSEL_IMAGES = [
     alt: "Authentic Chicken Shawarma"
   },
   {
-    src: "https://images.unsplash.com/photo-1593001874117-c99c800e3eb7?auto=format&fit=crop&w=800&q=80",
-    alt: "Crispy Falafel Platter"
+    src: new URL('../../assets/Bowls_Falafel_Bowl.jpg', import.meta.url).href,
+    alt: "Bowls Falafel Bowl"
   }
 ];
 
