@@ -29,16 +29,16 @@ const About: React.FC = () => {
 
             <img 
                 // src="https://picsum.photos/500/400?random=2" 
-                src={`${import.meta.env.BASE_URL}assets/Lazeez Eats-01.jpg`}
-                alt="Lazeez Eats-01" 
+                src={`${import.meta.env.BASE_URL}assets/Lazeez_Eats-01.jpg`}
+                alt="Lazeez_Eats-01" 
                 className="w-full max-w-[350px] object-cover rounded-lg shadow-xl rotate-[-2deg]"
             />
         </div>
 
         <div className="mt-12 w-full max-w-[350px]">
              <img 
-                src={`${import.meta.env.BASE_URL}assets/Lazeez Eats-04.jpg`} 
-                alt="Lazeez Eats-04" 
+                src={`${import.meta.env.BASE_URL}assets/Lazeez_Eats-04.jpg`} 
+                alt="Lazeez_Eats-04" 
                 className="w-full h-auto rounded-full border-4 border-lazeez-green shadow-xl"
             />
         </div>
