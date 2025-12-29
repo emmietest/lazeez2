@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MenuCard from './MenuCard';
 import { MenuItem } from '../types';
 
@@ -9,7 +9,7 @@ const MENU_ITEMS: MenuItem[] = [
     name: "Chicken",
     price: "$10.93",
     description: "Savory & Spiced",
-    image: `${import.meta.env.BASE_URL}assets/Chicken Sandwich.png`,
+    image: `${import.meta.env.BASE_URL}assets/Chicken_Sandwich.png`,
     details: ["Unlimited Toppings", "Premium options available (+0.75)", "Make it a combo +$4.95"]
   },
   {
@@ -213,6 +213,8 @@ const MENU_ITEMS: MenuItem[] = [
 const CATEGORIES = ["Sandwiches", "Bowls", "Dipping Bowls", "Fries", "Drinks", "Dessert"];
 
 const Menu: React.FC = () => {
+  const [showMenuModal, setShowMenuModal] = useState(false);
+
   return (
     <section id="menu" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -224,6 +226,15 @@ const Menu: React.FC = () => {
           <p className="font-sans text-gray-500 max-w-2xl mx-auto text-lg whitespace-normal break-words">
             Authentic recipes passed down through generations. Prepared fresh daily.
           </p>
+        </div>
+
+        <div className="text-center mb-12">
+          <button
+            onClick={() => setShowMenuModal(true)}
+            className="font-sans text-lazeez-green hover:text-lazeez-dark transition-colors duration-200 underline text-lg font-semibold"
+          >
+            Click here to view our full menu
+          </button>
         </div>
 
         {CATEGORIES.map((category) => (
@@ -255,6 +266,33 @@ const Menu: React.FC = () => {
             <h4 className="font-display text-3xl md:text-4xl font-bold uppercase tracking-wide mb-4 text-lazeez-dark">Catering Available</h4>
             <p className="font-sans text-gray-600">Please speak to management about prices and options for your next event.</p>
         </div>
+
+        {/* Menu Modal Lightbox */}
+        {showMenuModal && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"
+            onClick={() => setShowMenuModal(false)}
+          >
+            <div
+              className="relative bg-white rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setShowMenuModal(false)}
+                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <img
+                src={`${import.meta.env.BASE_URL}assets/Full Menu Image.png`}
+                alt="Full Menu"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        )}
 
       </div>
     </section>
