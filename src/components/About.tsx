@@ -10,15 +10,6 @@ const About: React.FC = () => {
           Eats Lazeez
         </h2> */}
 
-        <p className="font-sans text-gray-700 text-lg md:text-xl leading-relaxed max-w-sm">
-          Come taste the dedication to quality and flavor that makes us the true Home of the Falafel.
-        </p>
-
-        <h2 className="font-display text-5xl md:text-7xl leading-none text-lazeez-green uppercase">
-          The Home<br />
-          Of Falafel
-        </h2>
-
         <div className="relative w-full flex flex-col items-center">
            {/* Halal Badge */}
             <div className="absolute -top-4 left-4 md:left-0 z-10">
@@ -34,14 +25,36 @@ const About: React.FC = () => {
                 className="w-full max-w-[350px] object-cover rounded-lg shadow-xl rotate-[-2deg]"
             />
         </div>
+          
+        <h2 className="font-display text-5xl md:text-7xl leading-none text-lazeez-green uppercase">
+          The Home<br />
+          Of Falafel
+        </h2>
 
-        <div className="mt-12 w-full max-w-[350px]">
-             <img 
-                src={`${import.meta.env.BASE_URL}assets/Lazeez_Eats-04.jpg`} 
-                alt="Lazeez_Eats-04" 
-                className="w-full h-auto rounded-full border-4 border-lazeez-green shadow-xl"
+        <p className="font-sans text-gray-700 text-lg md:text-xl leading-relaxed max-w-sm">
+          Come taste the dedication to quality and flavor that makes us the true Home of the Falafel.
+        </p>
+
+        
+
+        <div className="mt-8 flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center">
+          <div className="w-full max-w-[350px]">
+            <img 
+              src={`${import.meta.env.BASE_URL}assets/Hummus - Extra Photo.png`} 
+              alt="Hummus"
+              className="w-full h-auto rounded-full border-4 border-lazeez-green shadow-xl"
             />
+          </div>
+
+          <div className="w-full max-w-[350px]">
+            <img 
+              src={`${import.meta.env.BASE_URL}assets/Falafel Sandwich - Extra Photo.png`} 
+              alt="Falafel Sandwich"
+              className="w-full h-auto rounded-full border-4 border-lazeez-green shadow-xl"
+            />
+          </div>
         </div>
+
       </div>
     </section>
   );

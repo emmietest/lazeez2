@@ -2,20 +2,20 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const CAROUSEL_IMAGES = [
-  {
-    src: "https://images.unsplash.com/photo-1540914124281-342587941389?auto=format&fit=crop&w=800&q=80",
-    alt: "Fresh Mediterranean Hummus Bowl"
+ {
+    src: new URL('../../public/assets/Hummus - Extra Photo.png', import.meta.url).href,
+    alt: "Hummus"
   },
   {
-    src: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
-    alt: "Healthy Salad Bowl with Fresh Veggies"
+    src: new URL('../../public/assets/Falafel Sandwich - Extra Photo.png', import.meta.url).href,
+    alt: "Falafel Sandwich"
   },
   {
-    src: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=80",
-    alt: "Authentic Chicken Shawarma"
+    src: new URL('../../public/assets/Menu_Dessert_Pistachio Cake.jpg', import.meta.url).href,
+    alt: "Pistachio cake"
   },
   {
-    src: new URL('../../assets/Bowls_Falafel_Bowl.jpg', import.meta.url).href,
+    src: new URL('../../public/assets/Bowls_Falafel_Bowl.jpg', import.meta.url).href,
     alt: "Bowls Falafel Bowl"
   }
 ];
