@@ -42,7 +42,7 @@ const About: React.FC = () => {
             <img 
               src={`${import.meta.env.BASE_URL}assets/Hummus - Extra Photo.png`} 
               alt="Hummus"
-              className="w-full h-auto rounded-full border-4 border-lazeez-green shadow-xl"
+              className="w-full h-auto rounded-full shadow-sm"
             />
           </div>
 
@@ -50,7 +50,7 @@ const About: React.FC = () => {
             <img 
               src={`${import.meta.env.BASE_URL}assets/Falafel Sandwich - Extra Photo.png`} 
               alt="Falafel Sandwich"
-              className="w-full h-auto rounded-full border-4 border-lazeez-green shadow-xl"
+              className="w-full h-auto rounded-full shadow-sm"
             />
           </div>
         </div>

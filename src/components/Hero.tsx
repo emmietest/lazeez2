@@ -7,15 +7,15 @@ const CAROUSEL_IMAGES = [
     alt: "Hummus"
   },
   {
-    src: new URL('../../public/assets/Falafel Sandwich - Extra Photo.png', import.meta.url).href,
+    src: new URL('../../public/assets/Bowls_Falafel_Bowl.png', import.meta.url).href,
     alt: "Falafel Sandwich"
   },
   {
-    src: new URL('../../public/assets/Menu_Dessert_Pistachio Cake.jpg', import.meta.url).href,
+    src: new URL('../../public/assets/HALF_RIBEYE_STEAK_HALF_CHICKEN_BOWL.png', import.meta.url).href,
     alt: "Pistachio cake"
   },
   {
-    src: new URL('../../public/assets/Bowls_Falafel_Bowl.jpg', import.meta.url).href,
+    src: new URL('../../public/assets/Menu_Bowls_Chicken Bowl.png', import.meta.url).href,
     alt: "Bowls Falafel Bowl"
   }
 ];
