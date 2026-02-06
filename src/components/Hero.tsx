@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
               ))}
 
               {/* Navigation Controls */}
-              <button 
+              {/* <button 
                 onClick={(e) => { e.stopPropagation(); prevSlide(); }}
                 className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-20 bg-white/90 hover:bg-lazeez-green hover:text-white text-lazeez-dark p-3 rounded-full shadow-lg transition-all backdrop-blur-sm transform hover:scale-110"
                 aria-label="Previous dish"
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
                 aria-label="Next dish"
               >
                 <ChevronRight className="w-6 h-6" />
-              </button>
+              </button> */}
             </div>
 
             {/* Dots Indicators */}

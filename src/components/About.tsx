@@ -31,7 +31,7 @@ const About: React.FC = () => {
           Of Falafel
         </h2>
 
-        <p className="font-sans text-gray-700 text-lg md:text-xl leading-relaxed max-w-sm">
+        <p className="font-sans text-sm md:text-base mb-2 font-medium text-gray-800">
           Come taste the dedication to quality and flavor that makes us the true Home of the Falafel.
         </p>
 
@@ -42,7 +42,7 @@ const About: React.FC = () => {
             <img 
               src={`${import.meta.env.BASE_URL}assets/Hummus - Extra Photo.png`} 
               alt="Hummus"
-              className="w-full h-auto rounded-full shadow-sm"
+              className="w-full h-auto rounded-full"
             />
           </div>
 
@@ -50,7 +50,7 @@ const About: React.FC = () => {
             <img 
               src={`${import.meta.env.BASE_URL}assets/Falafel Sandwich - Extra Photo.png`} 
               alt="Falafel Sandwich"
-              className="w-full h-auto rounded-full shadow-sm"
+              className="w-full h-auto rounded-full"
             />
           </div>
         </div>

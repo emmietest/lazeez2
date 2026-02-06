@@ -45,19 +45,27 @@ const Footer: React.FC = () => {
         {/* Location */}
         <div className="space-y-2">
             <h3 className="font-display text-3xl uppercase tracking-wide">Location</h3>
-            <p className="font-sans font-medium text-lg text-gray-300 underline underline-offset-4 decoration-lazeez-green">
+            <a 
+                href="https://www.google.com/maps/search/?api=1&query=2643+Ellsworth+Rd+Ypsilanti+MI+48197" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-sans font-medium text-lg text-gray-300 hover:text-lazeez-green transition-colors block"
+            >
                 2643 Ellsworth Rd, Ypsilanti, MI<br />
                 48197
-            </p>
-            <p className="font-sans font-medium text-lg text-gray-300">
+            </a>
+            <a 
+                href="tel:+17343403576" 
+                className="font-sans font-medium text-lg text-gray-300 hover:text-lazeez-green transition-colors"
+            >
                 (734) 340-3576
-            </p>
+            </a>
         </div>
 
         {/* Links */}
         <div className="flex flex-col space-y-2 pt-6">
             <a href="#menu" className="font-display text-4xl uppercase hover:text-lazeez-green transition-colors">View Menu</a>
-            <a href="#" className="font-display text-4xl uppercase text-lazeez-green hover:text-white transition-colors">Order Now</a>
+            <a href="https://www.clover.com/online-ordering/lazeez-eats-ypsilanti" className="font-display text-4xl uppercase text-lazeez-green hover:text-white transition-colors">Order Now</a>
         </div>
       </div>
       

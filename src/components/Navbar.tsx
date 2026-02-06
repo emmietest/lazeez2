@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             
             {/* Big Desktop Order Button */}
             <a 
-                href="#" 
+                href="https://www.clover.com/online-ordering/lazeez-eats-ypsilanti" 
                 className="hidden md:flex items-center gap-2 bg-lazeez-green text-white font-display uppercase tracking-widest text-lg px-6 lg:px-8 py-3 hover:bg-white hover:text-lazeez-dark transition-all duration-300 transform skew-x-[-10deg] shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-1 group"
             >
                 <div className="skew-x-[10deg] flex items-center gap-3">
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
 
             {/* Mobile Order Icon Button (Compact) */}
             <a 
-                href="#" 
+                href="https://www.clover.com/online-ordering/lazeez-eats-ypsilanti" 
                 className="flex md:hidden items-center bg-lazeez-green text-white font-display uppercase tracking-wider text-sm px-3 py-2 skew-x-0 md:skew-x-[-10deg] transition-all duration-300 shadow-[3px_3px_0px_0px_rgba(255,255,255,0.2)] group"
             >
                 <div className="md:skew-x-[10deg] flex items-center gap-2">
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
             <a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-lazeez-green">Contact</a>
             
             <div className="pt-8 w-full max-w-xs">
-                 <a href="#" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-2 bg-lazeez-green text-white px-8 py-4 w-full text-center hover:bg-white hover:text-lazeez-dark transition-colors font-bold uppercase tracking-widest text-2xl skew-x-[-10deg] shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">
+                 <a href="https://www.clover.com/online-ordering/lazeez-eats-ypsilanti" onClick={() => setIsOpen(false)} className="flex items-center justify-center gap-2 bg-lazeez-green text-white px-8 py-4 w-full text-center hover:bg-white hover:text-lazeez-dark transition-colors font-bold uppercase tracking-widest text-2xl skew-x-[-10deg] shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">
                     <div className="skew-x-[10deg] flex items-center gap-2">
                          {/* <ShoppingBag className="w-6 h-6" /> */}
                         Order Online
