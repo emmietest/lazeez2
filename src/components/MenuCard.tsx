@@ -47,7 +47,7 @@ const MenuCard: React.FC<MenuCardProps> = ({ name, price, description, details, 
           </div>
 
           <div className="pb-4 text-center">
-             <span className="text-[10px] font-bold text-gray-300 uppercase tracking-widest border-t border-gray-100 pt-2 px-4">Tap for details</span>
+             <span className="text-[15px] font-bold text-white- uppercase tracking-widest border-t border-gray-100 pt-2 px-4">Tap for details</span>
           </div>
         </div>
 

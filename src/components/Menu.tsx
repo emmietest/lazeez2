@@ -118,8 +118,8 @@ const MENU_ITEMS: MenuItem[] = [
   // --- FRIES ---
   {
     category: "Fries",
-    name: "Fries",
-    price: "$3.95",
+    name: "French Fries",
+    price: "$4.68",
     description: "Golden Crisp Seasoned",
     image: `${import.meta.env.BASE_URL}assets/Menu_Fries.jpg`,
     details: ["One Size", "Seasoned salt", "Crispy texture"]
@@ -127,7 +127,7 @@ const MENU_ITEMS: MenuItem[] = [
   {
     category: "Fries",
     name: "Loaded Fries Chicken",
-    price: "$3.95",
+    price: "$14.05",
     description: "Golden Crisp Seasoned with Chicken",
     image: `${import.meta.env.BASE_URL}assets/Menu_Loaded Fries_Chicken.jpg`,
     details: ["One Size", "Seasoned salt", "Crispy texture"]
@@ -135,8 +135,8 @@ const MENU_ITEMS: MenuItem[] = [
   {
     category: "Fries",
     name: "Loaded Fries Steak",
-    price: "$3.95",
-    description: "Golden Crisp Seasoned",
+    price: "$15.09",
+    description: "Golden Crisp Seasoned with Steak",
     image: `${import.meta.env.BASE_URL}assets/Menu_Loaded Fries_Steak.jpg`,
     details: ["One Size", "Seasoned salt", "Crispy texture"]
   },

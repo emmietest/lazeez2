@@ -2,10 +2,10 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const CAROUSEL_IMAGES = [
- {
-    src: new URL('../../public/assets/Hummus - Extra Photo.png', import.meta.url).href,
-    alt: "Hummus"
-  },
+//  {
+//     src: new URL('../../public/assets/Hummus - Extra Photo.png', import.meta.url).href,
+//     alt: "Hummus"
+//   },
   {
     src: new URL('../../public/assets/Bowls_Falafel_Bowl.png', import.meta.url).href,
     alt: "Falafel Sandwich"
@@ -60,21 +60,19 @@ const Hero: React.FC = () => {
           onMouseLeave={() => setIsPaused(false)}
         >
             {/* Decorative Splatter effect behind */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-yellow-400/20 rounded-full blur-3xl -z-10"></div>
-            
-            {/* Carousel Container */}
-            <div className="relative w-full max-w-[400px] mx-auto aspect-square">
+             <div className="relative w-full w-full mx-auto aspect-square rounded-full object-cover overflow-hidden">
               {CAROUSEL_IMAGES.map((img, index) => (
-                <img 
-                    key={index}
-                    src={img.src} 
-                    alt={img.alt} 
-                    className={`absolute inset-0 w-full h-full rounded-full shadow-2xl border-4 border-white object-cover transition-opacity duration-700 ease-in-out ${
-                      index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-                    }`}
-                />
-              ))}
+              <img
+                key={index}
+                src={img.src}
+                alt={img.alt}
+                className={`absolute inset-0 w-full h-full rounded-full object-cover shadow-2xl transition-opacity duration-700 ease-in-out ${
+                  index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                }`}
+              />
+            ))}
 
+            
               {/* Navigation Controls */}
               {/* <button 
                 onClick={(e) => { e.stopPropagation(); prevSlide(); }}

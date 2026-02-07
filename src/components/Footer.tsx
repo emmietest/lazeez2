@@ -51,8 +51,8 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="font-sans font-medium text-lg text-gray-300 hover:text-lazeez-green transition-colors block"
             >
-                2643 Ellsworth Rd, Ypsilanti, MI<br />
-                48197
+                2643 Ellsworth Rd<br />
+                Ypsilanti, MI 48197
             </a>
             <a 
                 href="tel:+17343403576" 
@@ -72,6 +72,28 @@ const Footer: React.FC = () => {
       <div className="mt-16 text-center text-xs text-gray-600 font-sans">
         © {new Date().getFullYear()} Lazeez Eats. All rights reserved.
       </div>
+
+      {/* Footer Credit Bar */}
+        <div className="-mx-6 mt-6 bg-lazeez-green text-white text-xs">
+      <div className="flex items-center justify-center gap-2 py-1">
+        <img
+          src={`${import.meta.env.BASE_URL}assets/FW logo.png`}
+          alt="Freshwork Logo"
+          className="h-6 w-6"
+        />
+        <span className="font-sans font-medium tracking-wide">
+          WEBSITE DESIGN BY&nbsp;
+          <a
+            href="https://freshworkfactory.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            FRESHWORKFACTORY.COM
+          </a>
+        </span>
+      </div>
+    </div>
     </footer>
   );
 };
