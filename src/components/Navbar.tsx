@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import logo from '../../assets/logo.png';
 
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      const handleScroll = () => setIsOpen(false);
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, [isOpen]);
 
   return (
     <nav className="bg-lazeez-dark text-white px-4 md:px-6 sticky top-0 z-50 shadow-md">
@@ -66,7 +74,10 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden fixed top-[80px] left-0 w-full bg-lazeez-dark border-t border-gray-800 p-6 flex flex-col items-center space-y-6 font-display text-xl tracking-wider shadow-2xl z-40 max-h-[calc(100vh-80px)] overflow-y-auto">
+        <div 
+          className="md:hidden fixed top-[47px] left-0 w-full bg-lazeez-dark border-t border-gray-800 p-6 flex flex-col items-center space-y-6 font-display text-xl tracking-wider shadow-2xl z-40 h-[calc(100vh-300px)] overflow-y-auto"
+          onClick={(e) => { if (e.target === e.currentTarget) setIsOpen(false); }}
+        >
             <a href="#" onClick={() => setIsOpen(false)} className="hover:text-lazeez-green">Home</a>
             <a href="#menu" onClick={() => setIsOpen(false)} className="hover:text-lazeez-green">Menu</a>
             <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-lazeez-green">About</a>

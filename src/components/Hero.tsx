@@ -8,7 +8,8 @@ const CAROUSEL_IMAGES = [
 //   },
   {
     src: new URL('../../public/assets/Bowls_Falafel_Bowl.png', import.meta.url).href,
-    alt: "Falafel Sandwich"
+    alt: "Falafel Sandwich",
+    zoom: '150%'   // tighter crop → little or no zoom
   },
   {
     src: new URL('../../public/assets/HALF_RIBEYE_STEAK_HALF_CHICKEN_BOWL.png', import.meta.url).href,
@@ -16,7 +17,7 @@ const CAROUSEL_IMAGES = [
   },
   {
     src: new URL('../../public/assets/Menu_Bowls_Chicken Bowl.png', import.meta.url).href,
-    alt: "Bowls Falafel Bowl"
+    alt: "Bowls Falafel Bowl",
   }
 ];
 
@@ -60,15 +61,20 @@ const Hero: React.FC = () => {
           onMouseLeave={() => setIsPaused(false)}
         >
             {/* Decorative Splatter effect behind */}
-             <div className="relative w-full w-full mx-auto aspect-square rounded-full object-cover overflow-hidden">
+             <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] mx-auto rounded-full overflow-hidden">
               {CAROUSEL_IMAGES.map((img, index) => (
-              <img
+              <div
                 key={index}
-                src={img.src}
-                alt={img.alt}
-                className={`absolute inset-0 w-full h-full rounded-full object-cover shadow-2xl transition-opacity duration-700 ease-in-out ${
+                style={{
+                  backgroundImage: `url(${img.src})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                }}
+                className={`absolute inset-0 w-full h-full rounded-full shadow-2xl transition-opacity duration-700 ease-in-out ${
                   index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
                 }`}
+                aria-label={img.alt}
               />
             ))}
 
